@@ -4,8 +4,15 @@ server:
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
   cloud:
     config:
       server:
+        native:
+          search-locations: file://D:\comst\native-file-repo
         git:
-          uri: file://D:\comst\git-local-repo
+#          uri: file://D:\comst\git-local-repo
+#          uri: https://github.com/asd1029a/git-local-repo.git
+#          username: asd1029a
+#          password:
