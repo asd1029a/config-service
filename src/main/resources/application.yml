@@ -4,15 +4,25 @@ server:
 spring:
   application:
     name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   profiles:
     active: native
   cloud:
     config:
       server:
         native:
-          search-locations: file://D:\comst\native-file-repo
+          search-locations: file:///D:\comst\native-file-repo
         git:
-#          uri: file://D:\comst\git-local-repo
+#          uri: file:///D:\comst\git-local-repo
 #          uri: https://github.com/asd1029a/git-local-repo.git
 #          username: asd1029a
 #          password:
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
