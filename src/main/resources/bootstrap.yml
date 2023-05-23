@@ -1,6 +1,7 @@
 encrypt:
 #  key: asdasdasdasd
   key-store:
-    location: file:///D:\comst\keystore/apiEncryptionKey.jks
+#    location: file:///D:\comst\keystore/apiEncryptionKey.jks
+    location: file:/apiEncryptionKey.jks
     password: danu1234
     alias: apiEncryptionKey

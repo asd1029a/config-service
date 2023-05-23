@@ -5,7 +5,7 @@ spring:
   application:
     name: config-service
   rabbitmq:
-    host: 127.0.0.1
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest
@@ -18,7 +18,7 @@ spring:
           search-locations: file:///D:\comst\native-file-repo
         git:
 #          uri: file:///D:\comst\git-local-repo
-#          uri: https://github.com/asd1029a/git-local-repo.git
+          uri: https://github.com/asd1029a/git-local-repo.git
 #          username: asd1029a
 #          password:
 management:
